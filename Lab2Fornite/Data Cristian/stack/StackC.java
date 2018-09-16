@@ -3,7 +3,7 @@ package stack;
 public class StackC <T> implements IStackC<T> {
 
 	@Override
-	public boolean empty() {
+	public boolean isEmpty() {
 		// TODO Auto-generated method stub
 		return false;
 	}
