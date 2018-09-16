@@ -1,29 +1,51 @@
 package stack;
 
-public class StackC <T> implements IStackC<T> {
+import node.ISimpleNodeC;
+import node.SimpleNodeC;
 
+public class StackC <T> implements IStackC<T> {
+	
+	private ISimpleNodeC<T> first;
+	
 	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean empty() {
+		boolean empty = true;
+		if(first!=null) {
+			empty = false;
+		}
+		return empty;
 	}
 
 	@Override
 	public T peek() {
-		// TODO Auto-generated method stub
-		return null;
+		T item = null;
+		if(first!=null) {
+			item = first.getItem();
+		}
+		return item;
 	}
 
 	@Override
-	public T pop() {
-		// TODO Auto-generated method stub
-		return null;
+	public T pop() throws StackCException {
+		if(!empty()) {
+			T item = first.getItem();
+			first = first.getNext();
+			return item;
+		}else {
+			throw new StackCException();
+		}
 	}
 
 	@Override
-	public T push(T item) {
-		// TODO Auto-generated method stub
-		return null;
+	public void push(T item) {
+		ISimpleNodeC<T> node = new SimpleNodeC<T>(item);
+		if(first==null) {
+			first=node;
+		}else {
+			ISimpleNodeC<T> assistant = first;
+			first = node;
+			first.setNext(assistant);
+		}
 	}
 	
 }

@@ -3,15 +3,14 @@ package stack;
 public interface IStackC <T> {
 
 	/**
-	 * isEmpty() : query if the list be empty or not 
-	 * @return   : true  - if the stack is empty
-	 * 			 : false - if the stack is not empty
+	 * 
+	 * @return
 	 */
-	public boolean isEmpty();
+	public boolean empty();
 	
 	/**
-	 * peek()    : query the element in the stack without take this element 
-	 * @return T : the element that has been query
+	 * 
+	 * @return
 	 */
 	public T peek();
 	
@@ -19,13 +18,13 @@ public interface IStackC <T> {
 	 * 
 	 * @return
 	 */
-	public T pop();
+	public T pop() throws StackCException;
 	
 	/**
 	 * 
 	 * @param item
 	 * @return
 	 */
-	public T push(T item);
+	public void push(T item);
 	
 }
