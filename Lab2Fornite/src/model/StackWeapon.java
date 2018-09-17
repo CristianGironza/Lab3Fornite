@@ -6,12 +6,12 @@ import stack.StackC;
 
 import stack.StackCException;
 
-public class StackGun extends StackC<Weapon> {
+public class StackWeapon extends StackC<Weapon> {
 	
 	private Random luck;
 	public static final String[] WEAPONS = {"Gun", "Machine gun", "Grenade", "Shotgun", "Bazooka"};
 	
-	public StackGun() {
+	public StackWeapon() {
 		super.push(new Weapon());
 	}
 	
