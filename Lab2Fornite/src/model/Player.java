@@ -58,58 +58,107 @@ public class Player {
 		this.level = level; 
 	}
 
+	/**
+	 * allows to get the amount of player's kills
+	 * @return amount of kills
+	 */
 	public int getKills() {
 		return kills;
 	}
 
+	/**
+	 * allows to set the new amount of kills
+	 */
 	public void setKills(int kills) {
 		this.kills = kills;
 	}
 
+	/**
+	 * allows to get the amount of player's Deaths
+	 * @return amount of deaths
+	 */
 	public int getDeahts() {
 		return deahts;
 	}
 
+	/**
+	 * allows to set the new amount of deaths
+	 */
 	public void setDeahts(int deahts) {
 		this.deahts = deahts;
 	}
 
+	/**
+	 * allows to get the total player's time
+	 * @return total timee
+	 */
 	public double getTimePlayed() {
 		return timePlayed;
 	}
 
+	/**
+	 * allows to set the new player's time
+	 */
 	public void setTimePlayed(double timePlayed) {
 		this.timePlayed = timePlayed;
 	}
 
+	/**
+	 * allows to get the specific plataform used by the player
+	 * @return name of platform
+	 */
 	public String getPlataform() {
 		return plataform;
 	}
 
+	/**
+	 * allows to set the new player's platform
+	 */
 	public void setPlataform(String plataform) {
 		this.plataform = plataform;
 	}
 
+	/**
+	 * allows to get the ping of player's connection
+	 * @return player's ping
+	 */
 	public int getPing() {
 		return ping;
 	}
 
+	/**
+	 * allows to set the new player's ping
+	 */
 	public void setPing(int ping) {
 		this.ping = ping;
 	}
 
+	/**
+	 * allows to get the player's location
+	 * @return player's location
+	 */
 	public String getLocation() {
 		return location;
 	}
 
+	/**
+	 * allows to set the new player's location
+	 */
 	public void setLocation(String location) {
 		this.location = location;
 	} 
 	
+	/**
+	 * allows to get the player's level
+	 * @return player's level
+	 */
 	public String getLevel() {
 		return level;
 	}
 
+	/**
+	 * allows to set the new player's level
+	 */
 	public void setLevel(String level) {
 		this.level = level;
 	}
