@@ -163,6 +163,13 @@ public class Player {
 		this.level = level;
 	}
 	
+	/**
+	 * allos to calculate player's level based on
+	 * the amount of kills, deaths and time played
+	 * @param kills amount of kills
+	 * @param death amount of deaths
+	 * @param timePlayed amount of time played
+	 */
 	public void calculateLevel(int kills, int death , int timePlayed ) {
 		
 		double level = (kills- death)/ timePlayed; 
