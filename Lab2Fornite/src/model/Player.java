@@ -2,25 +2,50 @@ package model;
 
 public class Player {
 	
+	/**
+	 * constant that specifies the type of platform used by the player
+	 */
 	public final static String[] PLATAFORM = {"PlayStation 4", "Android", "Nintendo Switch"
 											 ,"Xbox One","Microsoft Windows", "Mac OS", "iOS"};
-	
+	/**
+	 * constant that specifies player's level
+	 */
 	public final static String[] LEVEL = {"ProPlayer", "MediumPlayer", "AmateurPlayer", "NoodPlayer", "SuperNoodPlayer"}; 
 	
-	
+	/**
+	 * amount of kills made by the player
+	 */
 	private int kills; 
 	
+	/**
+	 * amount of deaths of the player
+	 */
 	private int deahts; 
 
+	/**
+	 * ping of player's connection
+	 */
 	private int ping; 
 	
+	/**
+	 * amount of played time
+	 */
 	private double timePlayed; 
 	
 
+	/**
+	 * the plataform used by the player
+	 */
 	private String plataform; 
 	
+	/**
+	 * the player's location
+	 */
 	private String location;
 
+	/**
+	 * the player's level
+	 */
 	private String level; 
 	
 	public Player(int kills, int deahts, int timePlayed, String plataform, int ping, String location, String level) {
