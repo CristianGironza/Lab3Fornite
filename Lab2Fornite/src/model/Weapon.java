@@ -8,12 +8,15 @@ public class Weapon {
 	/**
 	 * the weapon's name
 	 */
+	
 	private String name;
 	
 	/**
 	 * the weapon's amount of bullets
 	 */
+	
 	private int bullets;
+	
 	
 	/**
 	 * the first constructor of the class 
