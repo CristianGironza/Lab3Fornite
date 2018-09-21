@@ -1,5 +1,7 @@
 package model;
 
+import stack.StackCException;
+
 public class Player {
 	
 	/**
@@ -48,6 +50,11 @@ public class Player {
 	 */
 	private String level; 
 	
+	/**
+	 * User´s weapons
+	 */
+	private StackWeapon weapons;
+	
 	public Player(int kills, int deahts, int timePlayed, String plataform, int ping, String location, String level) {
 		this.kills = kills;
 		this.deahts = deahts;
@@ -56,6 +63,7 @@ public class Player {
 		this.ping = ping;
 		this.location = location;
 		this.level = level; 
+		weapons = new StackWeapon();
 	}
 
 	/**
@@ -193,10 +201,21 @@ public class Player {
 		else if( level <= 1399) {
 			this.setLevel(LEVEL[4]);
 		}
-
-		
-		
 	}
 	
+	/**
+	 * ShootCurrentWeapon() : this method shoot the weapon that person use in that moment 
+	 * @throws StackCException : this exception is throw when the Stack is empty
+	 * */
+	public void ShootCurrentWeapon() throws StackCException {
+		weapons.ShootCurrentWeapon();
+	}
+	
+	/**
+	 * this method pick up the weapon to the stack of weapons 
+	 * */
+	public void PickUpWeapon() {
+		weapons.PickUpWeapon();
+	}
 
 }
